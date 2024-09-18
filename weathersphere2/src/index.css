@@ -30,7 +30,7 @@
 @media (max-width: 480px) {
   .app {
     background-size: cover;
-    height: 120vh;
-    width: 50vh;
+    height: 130vh;
+    width: 60vh;
   }
 }
