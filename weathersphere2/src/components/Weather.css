@@ -1,0 +1,279 @@
+.weather {
+  place-self: center;
+  padding: 40px;
+  border-radius: 30px;
+  backdrop-filter: blur(10px);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.searchbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+}
+
+.searchbar input {
+  border-radius: 20px;
+  height: 50px;
+  border: 1px solid black;
+  outline: none;
+  padding-left: 25px;
+  background: rgb(237, 239, 249);
+  font-size: 18px;
+
+}
+
+.searchbar img {
+  width: 50px;
+  padding: 15px;
+  border-radius: 35px;
+  background-color: rgb(222, 222, 249);
+  border: 1px solid black;
+}
+
+.Clear {
+  margin-left: 110px;
+  width: 130px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.Temp {
+  font-size: 60px;
+  color: rgb(5, 9, 131);
+  display: flex;
+  justify-content: center;
+  font-weight: 800;
+}
+
+.description {
+  display: flex;
+  justify-content: center;
+  font-size: 35px;
+  font-weight: 800;
+  margin-top: -15px;
+  margin-bottom: -10px;
+  color: rgb(5, 9, 131);
+}
+
+.Location {
+  font-size: 40px;
+  color: rgb(5, 9, 131);
+  display: flex;
+  justify-content: center;
+  font-weight: 800;
+}
+
+.other {
+  width: 100%;
+  margin-top: 30px;
+  display: flex;
+  color: rgb(5, 9, 131);
+  justify-content: center;
+  gap: 65px;
+}
+
+.detail1,
+.detail2 {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  font-size: 22px;
+  font-weight: 600;
+}
+
+.minmax {
+  display: flex;
+  justify-content: center;
+  font-size: 20px;
+  gap: 32px;
+  padding-top: 17px;
+  color: rgb(5, 9, 131);
+  font-weight: bolder;
+}
+
+.feel {
+  display: flex;
+  justify-content: center;
+  font-size: 18px;
+  color: rgb(5, 9, 131);
+  font-weight: bolder;
+}
+.cloth{
+  
+  border: 3px  black;
+  border-style: dashed;
+  border-radius: 40px;
+  opacity: 20;
+  margin-left: 10px;
+  margin-right: 10px;
+  text-align: center;
+ 
+
+}
+.head1{
+  text-align: center;
+  font-size: 25px;
+  font-weight:900;
+  text-decoration: underline;
+  color: rgb(28, 2, 106);
+}
+.head2{
+  display: flex;
+    padding-left: 20px;
+    font-weight: bold;
+    background-color: white;
+    width: 53%;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 350px;
+    border-radius: 17px;
+    color: rgb(28, 2, 106);
+}
+.tp{
+  display: flex;
+  text-align: center;
+  margin-top: 10px;
+  font-size: 20px;
+  font-weight: bold;
+  padding-bottom: 12px;
+  background-color: rgb(255, 255, 255);
+  width: 18%;  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 610px;
+  height: 25px;
+  padding-bottom: 5px;
+  border-radius: 17px;
+  margin-bottom: 8px;
+  color: rgb(28, 2, 106);
+  
+  
+}
+.sugg{
+  display: flex;
+  text-align: center;
+  padding-top: 1px;
+  font-size: 21px;
+  font-weight: bold;
+  border: 2px solid black;
+  display: inline-block;
+  margin-left:auto ;
+  margin-right: auto;
+  border-radius: 12px;
+  background-color: rgb(255, 255, 255);
+  color: rgb(28, 2, 106);
+}
+.botimg{
+  display: flex;
+  position: absolute;
+  height: 55px;
+  width: 55px;
+  bottom: 115px;
+  right:25px;
+}
+.botimg2{
+  display: flex;
+  position: absolute;
+  height: 55px;
+  width: 55px;
+  bottom: 115px;
+  left:25px;
+}
+@media (max-width: 1200px) {
+  .head2, .tp {
+    margin-left: 200px;
+    width: 60%;
+  }
+
+  .tp {
+    width: 22%;
+    margin-left: 480px;
+  }
+
+  .other {
+    gap: 45px;
+  }
+  .Clear{
+    height: auto;
+    padding-left: 30px;
+    
+  }
+}
+
+@media (max-width: 768px) {
+  .head2, .tp {
+    margin-left: 100px;
+    width: 70%;
+    font-size:16px;
+  
+  }
+  .head2{
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .tp {
+    width: 30%;
+    margin-left: 250px;
+  
+  }
+
+  .other {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .searchbar {
+    flex-direction: column;
+  }
+
+  .Clear {
+   padding-right: 20px; 
+    height: auto;
+  
+  }
+}
+
+@media (max-width: 480px) {
+  .head2, .tp {
+    margin-left: 20px;
+    width: 90%;
+  }
+
+  .tp {
+    width: 55%;
+    font-size: 16px;
+    margin: auto;
+    
+  }
+
+  .other {
+    gap: 20px;
+  }
+
+  .Temp {
+    font-size: 40px;
+  }
+
+  .description {
+    font-size: 25px;
+  }
+
+  .Location {
+    font-size: 30px;
+  }
+
+  .minmax, .feel {
+    font-size: 16px;
+  }
+
+  .sugg {
+    font-size: 15px;
+  }
+}
