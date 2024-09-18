@@ -10,7 +10,7 @@
 .app{
   height: 100vh;
   display: grid;
-  background-image: url("C:\Users\priya\OneDrive\Documents\repo\Weatherappv-2\weathersphere2\src\assets\overcast.gif");
+  background-image: url("../public/overcast.gif");
   background-size: cover;
   font-family: "Poppins", system-ui;
   height: 100vh;
