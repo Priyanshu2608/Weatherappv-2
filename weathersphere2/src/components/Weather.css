@@ -239,6 +239,19 @@
     background-color: transparent;
     color: white;
   }
+  .searchbar img{
+    display: flex;
+    margin-left: 350px;
+    margin-top: -60px;
+  }
+  .searchbar{
+    margin-top: -35px;
+    width: 340px;
+
+  }
+  .Clear{
+    margin-left:100px ;
+  }
 }
 
 @media (max-width: 480px) {
