@@ -22,7 +22,6 @@
   padding-left: 25px;
   background: rgb(237, 239, 249);
   font-size: 18px;
-
 }
 
 .searchbar img {
@@ -54,8 +53,7 @@
   justify-content: center;
   font-size: 35px;
   font-weight: 800;
-  margin-top: -15px;
-  margin-bottom: -10px;
+  margin: -15px 0 -10px;
   color: rgb(5, 9, 131);
 }
 
@@ -102,89 +100,81 @@
   color: rgb(5, 9, 131);
   font-weight: bolder;
 }
-.cloth{
-  
-  border: 3px  black;
-  border-style: dashed;
-  border-radius: 40px;
-  opacity: 20;
-  margin-left: 10px;
-  margin-right: 10px;
-  text-align: center;
- 
 
+.cloth {
+  border: 3px dashed black;
+  border-radius: 40px;
+  margin: 0 10px;
+  text-align: center;
 }
-.head1{
+
+.head1 {
   text-align: center;
   font-size: 25px;
-  font-weight:900;
+  font-weight: 900;
   text-decoration: underline;
   color: rgb(28, 2, 106);
 }
-.head2{
+
+.head2 {
   display: flex;
-    padding-left: 20px;
-    font-weight: bold;
-    background-color: white;
-    width: 53%;
-    display:flex;
-    align-items: center;
-    justify-content: center;
-    margin-left: 350px;
-    border-radius: 17px;
-    color: rgb(28, 2, 106);
-}
-.tp{
-  display: flex;
-  text-align: center;
-  margin-top: 10px;
-  font-size: 20px;
+  padding-left: 20px;
   font-weight: bold;
-  padding-bottom: 12px;
-  background-color: rgb(255, 255, 255);
-  width: 18%;  
-  display: flex;
+  background-color: white;
+  width: 53%;
   align-items: center;
   justify-content: center;
-  margin-left: 610px;
-  height: 25px;
-  padding-bottom: 5px;
+  margin: 0 auto;
   border-radius: 17px;
-  margin-bottom: 8px;
   color: rgb(28, 2, 106);
-  
-  
 }
-.sugg{
+
+.tp {
   display: flex;
   text-align: center;
-  padding-top: 1px;
+  margin: 10px auto;
+  font-size: 20px;
+  font-weight: bold;
+  background-color: white;
+  width: 18%;
+  align-items: center;
+  justify-content: center;
+  height: 25px;
+  padding: 5px;
+  border-radius: 17px;
+  color: rgb(28, 2, 106);
+}
+
+.sugg {
+  display: inline-block;
+  text-align: center;
+  padding: 1px;
   font-size: 21px;
   font-weight: bold;
   border: 2px solid black;
-  display: inline-block;
-  margin-left:auto ;
-  margin-right: auto;
   border-radius: 12px;
-  background-color: rgb(255, 255, 255);
+  background-color: white;
   color: rgb(28, 2, 106);
+  margin: 0 auto;
 }
-.botimg{
+
+.botimg,
+.botimg2 {
   display: flex;
   position: absolute;
   height: 55px;
   width: 55px;
   bottom: 115px;
-  right:25px;
 }
-.botimg2{
-  display: flex;
-  position: absolute;
-  height: 55px;
-  width: 55px;
-  bottom: 115px;
-  left:25px;
+
+.botimg2 {
+  left: 25px;
 }
+
+.botimg {
+  right: 25px;
+}
+
 @media (max-width: 1200px) {
   .head2, .tp {
     margin-left: 200px;
@@ -199,10 +189,9 @@
   .other {
     gap: 45px;
   }
-  .Clear{
-    height: auto;
+  
+  .Clear {
     padding-left: 30px;
-    
   }
 }
 
@@ -210,10 +199,12 @@
   .head2, .tp {
     margin-left: 100px;
     width: 70%;
-    font-size:16px;
-  
+    font-size: 14px;
+    background-color: transparent;
+    color: aliceblue;
   }
-  .head2{
+
+  .head2 {
     flex-direction: column;
     align-items: center;
   }
@@ -221,7 +212,6 @@
   .tp {
     width: 30%;
     margin-left: 250px;
-  
   }
 
   .other {
@@ -234,9 +224,20 @@
   }
 
   .Clear {
-   padding-right: 20px; 
-    height: auto;
-  
+    padding-right: 20px;
+  }
+
+  .botimg, .botimg2 {
+    visibility: hidden;
+  }
+
+  .head1 {
+    font-size: 17px;
+  }
+
+  .sugg {
+    background-color: transparent;
+    color: white;
   }
 }
 
@@ -250,7 +251,6 @@
     width: 55%;
     font-size: 16px;
     margin: auto;
-    
   }
 
   .other {
@@ -275,5 +275,24 @@
 
   .sugg {
     font-size: 15px;
+    background-color: transparent;
+    color: white;
+  }
+
+  .botimg, .botimg2 {
+    visibility: hidden;
+  }
+  .searchbar img{
+    display: flex;
+    margin-left: 320px;
+    margin-top: -60px;
+  }
+  .searchbar{
+    margin-top: -35px;
+    width: 240px;
+
+  }
+  .Clear{
+    margin-left:50px ;
   }
 }

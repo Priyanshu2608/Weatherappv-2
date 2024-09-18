@@ -134,7 +134,7 @@
       <div className='weather ' style={{ backgroundImage: `url(${background})` }}>
         <div className="searchbar">
           <input ref={inputref} type="text" placeholder='Search' />
-          <img src={Searchicon} alt="icon" onClick={()=>search(inputref.current.value)} />
+          <img  className="searchicon" src={Searchicon} alt="icon" onClick={()=>search(inputref.current.value)} />
           </div>
           <img className='Clear' src={weatherDetail.icon} alt="Clear"/> 
           <p className='Temp'>{weatherDetail.temperature}°C</p>
